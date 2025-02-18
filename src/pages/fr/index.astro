@@ -1,16 +1,16 @@
 ---
-import "../styles/main.css";
+import "../../styles/main.css";
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play Dragonsweeper Online - Free & Fresh Puzzle Game</title>
-    <meta name="description" content="Dragonsweeper is a free online Minesweeper variant game with a fantasy twist! Play now to uncover hidden treasures while avoiding fearsome dragons. ">
-    <meta name="keywords" content="Dragonsweeper, Minesweeper, Minesweeper Game, Online Game, Free Game,  Fantasy Game">
-    <meta property="og:title" content="Play Dragonsweeper Online - Free & Fresh Puzzle Game"/>
-    <meta property="og:description" content="Dragonsweeper is a free online Minesweeper variant game with a fantasy twist! Play now to uncover hidden treasures while avoiding fearsome dragons."/>
+    <title>Dragonsweeper - Jouez en ligne à la nouvelle version du Démineur la plus populaire</title>
+    <meta name="description" content="Dragonsweeper est un jeu de Démineur gratuit en ligne avec une touche de fantaisie ! Jouez maintenant pour découvrir des trésors cachés tout en évitant les dragons redoutables. Apprenez les règles et les astuces ici !">
+    <meta name="keywords" content="Dragonsweeper, Démineur, Jeu de Démineur, Jeu en ligne, Jeu gratuit, Jeu de réflexion, Dragon, Jeu de fantaisie">
+    <meta property="og:title" content="Dragonsweeper - Jouez en ligne à la nouvelle version du Démineur la plus populaire"/>
+    <meta property="og:description" content="Dragonsweeper est un jeu de Démineur gratuit en ligne avec une touche de fantaisie ! Jouez maintenant pour découvrir des trésors cachés tout en évitant les dragons redoutables. Apprenez les règles et les astuces ici !"/>
     <meta property="og:url" content="https://www.playfiddlebops.com"/>
     <meta property="og:site_name" content="Dragonsweeper"/>
     <meta property="og:locale" content="en_US"/>
@@ -19,12 +19,12 @@ import "../styles/main.css";
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content="https://www.playfiddlebops.com"/>
     <meta name="twitter:creator" content="Dragonsweeper"/>
-    <meta name="twitter:title" content="Play Dragonsweeper Online - Free & Fresh Puzzle Game"/>
-    <meta name="twitter:description" content="Dragonsweeper is a free online Minesweeper variant game with a fantasy twist! Play now to uncover hidden treasures while avoiding fearsome dragons. Learn the rules and tips here!"/>
+    <meta name="twitter:title" content="Dragonsweeper - Jouez en ligne à la nouvelle version du Démineur la plus populaire"/>
+    <meta name="twitter:description" content="Dragonsweeper est un jeu de Démineur gratuit en ligne avec une touche de fantaisie ! Jouez maintenant pour découvrir des trésors cachés tout en évitant les dragons redoutables. Apprenez les règles et les astuces ici !"/>
     <meta name="twitter:image" content="https://www.playfiddlebops.com/tw-1.jpg"/>
     <meta name="author" content="Daniel Benmergui">
-    <meta name="robots" content="index, follow">
-    <link rel="shortcut icon" href="https://www.playfiddlebops.com/favicon.ico" />
+  <meta name="robots" content="index, follow">
+  <link rel="shortcut icon" href="https://www.playfiddlebops.com/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -47,14 +47,14 @@ import "../styles/main.css";
     <header>
         <div class="container">
             <div class="logo">
-                <h1><a href="/">Dragon<span class="light">sweeper</span></a></h1>
+                <h1><a href="/fr">Dragon<span class="light">sweeper</span></a></h1>
             </div>
             <nav>
-                <button class="nav-toggle" aria-label="Toggle Navigation">☰</button>
+                <button class="nav-toggle" aria-label="Basculer la navigation">☰</button>
                 <ul class="nav-links">
-                    <li><a href="#how-to-play">How to Play</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="/fr#how-to-play">Comment jouer</a></li>
+                    <li><a href="/fr#features">Fonctionnalités</a></li>
+                    <li><a href="/fr#faq">FAQ</a></li>
                 </ul>
             </nav>
       <select style="float:right;">
@@ -73,42 +73,42 @@ import "../styles/main.css";
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Play Dragonsweeper Online - Free & Fresh Puzzle Game</h1>
-                <p>Explore a fantasy world, avoid lurking dragons, and uncover hidden treasures! Challenge your wit and luck now.</p>
-                <div class="game-grid">
-                    <!-- Game cards go here -->
-                    <div class="game-card responsive-iframe-container">
-                       <iframe id="dragonsweeper-iframe" src="" allowfullscreen width="100%" height="100%"></iframe>
-                           <button id="playButton">Play Game</button>
-                       </div>
-                      </div>
-                </div>
+                <h1>Jouez à Dragonsweeper dès maintenant - La nouvelle version du Démineur la plus populaire</h1>
+                <p>Explorez un monde fantastique, évitez les dragons cachés et découvrez des trésors enfouis ! Mettez votre intelligence et votre chance à l'épreuve dès maintenant.</p>
+        <div class="game-grid">
+          <!-- Game cards go here -->
+          <div class="game-card responsive-iframe-container">
+             <iframe id="dragonsweeper-iframe" src="" allowfullscreen width="100%" height="100%"></iframe>
+               <button id="playButton">Lancer le jeu</button>
+             </div>
+            </div>
+        </div>
             </div>
         </section>
 
         <section class="core-features" id="features">
             <div class="container">
-                <h2>Game Features</h2>
+                <h2>Fonctionnalités du jeu</h2>
                 <div class="core-feature-grid">
                     <div class="core-feature-item">
                         <i class="fas fa-eye"></i>
-                        <h4>Strategic Gameplay, Every Step Counts</h4>
-                        <p>Every click could reveal treasure or awaken a sleeping dragon. Use your logic and reasoning to proceed safely and clear the level!</p>
+                        <h4>Chaque pas compte, la stratégie avant tout</h4>
+                        <p>Chaque clic peut révéler un trésor ou réveiller un dragon endormi. Utilisez votre logique et votre raisonnement pour progresser en toute sécurité et terminer le niveau !</p>
                     </div>
                     <div class="core-feature-item">
                         <i class="fas fa-dragon"></i>
-                        <h4>Minesweeper in a Fantasy World</h4>
-                        <p>No more boring numbers, but dragons and treasures full of magical colors. Immerse yourself in beautiful visuals and sound effects, and experience unprecedented Minesweeper fun!</p>
+                        <h4>Le Démineur dans un monde fantastique</h4>
+                        <p>Plus de chiffres ennuyeux, mais des dragons et des trésors remplis de couleurs magiques. Immergez-vous dans de magnifiques graphismes et effets sonores, et vivez un plaisir de Démineur sans précédent !</p>
                     </div>
                     <div class="core-feature-item">
                         <i class="fas fa-trophy"></i>
-                        <h4>Challenge Your Limits</h4>
-                        <p>Offers multiple difficulty levels to meet the needs of players of all skill levels. From novice to expert, everyone can find a challenge that suits them and constantly push their limits!</p>
+                        <h4>Dépassez vos limites</h4>
+                        <p>Propose plusieurs niveaux de difficulté pour répondre aux besoins des joueurs de tous niveaux. Du novice à l'expert, chacun peut trouver un défi qui lui convient et repousser sans cesse ses limites !</p>
                     </div>
                     <div class="core-feature-item">
                         <i class="fas fa-brain"></i>
-                        <h4>Exercise Your Mind</h4>
-                        <p>Dragonsweeper is not just a game, but also a tool for exercising your mind. In the game, you need to constantly analyze, reason, and judge, thereby improving your logical thinking skills.</p>
+                        <h4>Exercez votre esprit</h4>
+                        <p>Dragonsweeper n'est pas seulement un jeu, mais aussi un outil pour exercer votre esprit. Dans le jeu, vous devez constamment analyser, raisonner et juger, ce qui améliore vos compétences en pensée logique.</p>
                     </div>
                 </div>
             </div>
@@ -116,25 +116,25 @@ import "../styles/main.css";
 
         <section class="master-art" id="how-to-play">
             <div class="container">
-                <h2>How to Play Dragonsweeper</h2>
-                <p>Dragonsweeper's rules are simple to understand, yet full of challenges. This is a game that tests your logic and luck!</p>
+                <h2>Comment jouer à Dragonsweeper</h2>
+                <p>Les règles de Dragonsweeper sont simples à comprendre, mais pleines de défis. C'est un jeu qui teste votre logique et votre chance !</p>
 
                 <div class="steps">
                     <div class="step">
-                        <h3>1. Click a Square</h3>
-                        <p>Click on any unknown square to reveal what's underneath. If you click on a treasure, you'll get a reward; if you click on a dragon, the game is over!</p>
+                        <h3>1. Cliquez sur une case</h3>
+                        <p>Cliquez sur n'importe quelle case inconnue pour révéler ce qui se trouve en dessous. Si vous cliquez sur un trésor, vous obtiendrez une récompense ; si vous cliquez sur un dragon, la partie est terminée !</p>
                     </div>
                     <div class="step">
-                        <h3>2. Number Hints</h3>
-                        <p>The number on a square tells you how many squares around it (in the eight surrounding squares) contain dragons. For example, if a square displays the number "3", then there are three dragons hidden around it.</p>
+                        <h3>2. Indices numériques</h3>
+                        <p>Le nombre sur une case vous indique combien de cases autour d'elle (dans les huit cases environnantes) contiennent des dragons. Par exemple, si une case affiche le nombre "3", il y a trois dragons cachés autour d'elle.</p>
                     </div>
                     <div class="step">
-                        <h3>3. Mark Dragons</h3>
-                        <p>Based on the number hints, use flags to mark the squares you think contain dragons. Marking can help you avoid accidental clicks and better plan your actions.</p>
+                        <h3>3. Marquez les dragons</h3>
+                        <p>Sur la base des indices numériques, utilisez des drapeaux pour marquer les cases que vous pensez contenir des dragons. Le marquage peut vous aider à éviter les clics accidentels et à mieux planifier vos actions.</p>
                     </div>
                     <div class="step">
-                        <h3>4. Clear Safely</h3>
-                        <p>Avoid all dragons and reveal all squares containing treasure, and you've successfully cleared the level! Challenge higher difficulties and win more rewards!</p>
+                        <h3>4. Terminez en toute sécurité</h3>
+                        <p>Évitez tous les dragons et révélez toutes les cases contenant des trésors, et vous aurez terminé le niveau avec succès ! Défiez des difficultés plus élevées et gagnez plus de récompenses !</p>
                     </div>
                 </div>
 
@@ -143,34 +143,34 @@ import "../styles/main.css";
 
 <section class="faq" id="faq">
   <div class="container">
-    <h2>Dragonsweeper FAQs</h2>
+    <h2>FAQ sur Dragonsweeper</h2>
     <div class="faq-item">
-      <h3>Q: What type of game is Dragonsweeper?</h3>
-      <p>A: Dragonsweeper is a puzzle game based on the classic Minesweeper rules, but with a fantasy theme and new gameplay elements. You need to avoid dragons and uncover treasures in the game, testing your logic and luck.</p>
+      <h3>Q : Quel type de jeu est Dragonsweeper ?</h3>
+      <p>R : Dragonsweeper est un jeu de réflexion basé sur les règles classiques du Démineur, mais avec un thème fantastique et de nouveaux éléments de gameplay. Vous devez éviter les dragons et découvrir des trésors dans le jeu, en testant votre logique et votre chance.</p>
     </div>
     <div class="faq-item">
-      <h3>Q: Is Dragonsweeper easy to pick up?</h3>
-      <p>A: Dragonsweeper's rules are easy to understand, and even if you've never played Minesweeper, you can pick it up quickly. But mastering the game requires some strategy and skill.</p>
+      <h3>Q : Dragonsweeper est-il facile à prendre en main ?</h3>
+      <p>R : Les règles de Dragonsweeper sont faciles à comprendre, et même si vous n'avez jamais joué au Démineur, vous pouvez le prendre en main rapidement. Mais maîtriser le jeu demande une certaine stratégie et des compétences.</p>
     </div>
     <div class="faq-item">
-      <h3>Q: What's special about Dragonsweeper?</h3>
-      <p>A: Dragonsweeper has beautiful graphics, catchy music, and a unique fantasy theme. It not only lets you experience the fun of Minesweeper, but also immerses you in a world full of adventure and surprises.</p>
+      <h3>Q : Qu'est-ce qui est spécial dans Dragonsweeper ?</h3>
+      <p>R : Dragonsweeper a de beaux graphismes, une musique entraînante et un thème fantastique unique. Il vous permet non seulement de découvrir le plaisir du Démineur, mais vous plonge également dans un monde rempli d'aventures et de surprises.</p>
     </div>
     <div class="faq-item">
-      <h3>Q: Is there a standalone version of Dragonsweeper?</h3>
-      <p>A: Dragonsweeper can be played directly on the website.</p>
+      <h3>Q : Existe-t-il une version autonome de Dragonsweeper ?</h3>
+      <p>R : Dragonsweeper peut être joué directement sur le site Web.</p>
     </div>
     <div class="faq-item">
-      <h3>Q: Where can I find more Dragonsweeper game information?</h3>
-      <p>A: You can visit our website [Link to your website] or follow DanielBen's Dragonsweeper project on itch.</p>
+      <h3>Q : Où puis-je trouver plus d'informations sur le jeu Dragonsweeper ?</h3>
+      <p>R : Vous pouvez visiter notre site Web [Lien vers votre site Web] ou suivre le projet Dragonsweeper de DanielBen sur itch.</p>
     </div>
   </div>
 </section>
 
         <section class="about" id="about">
           <div class="container">
-            <h2>About Dragonsweeper</h2>
-            <p>Dragonsweeper is an addictive puzzle game that will challenge your mind. Come test your limits!</p>
+            <h2>À propos de Dragonsweeper</h2>
+            <p>Dragonsweeper est un jeu de réflexion addictif qui mettra votre esprit au défi. Venez tester vos limites !</p>
           </div>
        </section>
 
@@ -178,7 +178,7 @@ import "../styles/main.css";
 
     <footer>
         <div class="container">
-        <div><a href="/privacy">Privacy Policy</a><a href="/terms-of-service">Terms of Service</a></div>
+        <div><a href="/fr/privacy" rel="nofollow">Politique de confidentialité</a><a href="/fr/terms-of-service" rel="nofollow">Conditions d'utilisation</a></div>
             <div class="copyright">© 2025 Dragonsweeper. All rights reserved.</div>
         </div>
     </footer>

@@ -1,0 +1,266 @@
+---
+import "../../styles/main.css";
+---
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragonsweeper - العب أحدث نسخة من لعبة كاسحة الألغام الأكثر شعبية عبر الإنترنت</title>
+    <meta name="description" content="Dragonsweeper هي لعبة مجانية على الإنترنت من لعبة كاسحة الألغام مع لمسة خيالية! العب الآن لاكتشاف الكنوز الخفية مع تجنب التنانين المخيفة. تعلم القواعد والنصائح هنا!">
+    <meta name="keywords" content="Dragonsweeper, كاسحة الألغام, لعبة كاسحة الألغام, لعبة على الإنترنت, لعبة مجانية, لعبة ألغاز, تنين, لعبة خيالية">
+    <meta property="og:title" content="Dragonsweeper - العب أحدث نسخة من لعبة كاسحة الألغام الأكثر شعبية عبر الإنترنت"/>
+    <meta property="og:description" content="Dragonsweeper هي لعبة مجانية على الإنترنت من لعبة كاسحة الألغام مع لمسة خيالية! العب الآن لاكتشاف الكنوز الخفية مع تجنب التنانين المخيفة. تعلم القواعد والنصائح هنا!">
+    <meta property="og:url" content="https://www.playfiddlebops.com"/>
+    <meta property="og:site_name" content="Dragonsweeper"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:image" content="https://www.playfiddlebops.com/tw-1.png"/>
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="https://www.playfiddlebops.com"/>
+    <meta name="twitter:creator" content="Dragonsweeper"/>
+    <meta name="twitter:title" content="Dragonsweeper - العب أحدث نسخة من لعبة كاسحة الألغام الأكثر شعبية عبر الإنترنت"/>
+    <meta name="twitter:description" content="Dragonsweeper هي لعبة مجانية على الإنترنت من لعبة كاسحة الألغام مع لمسة خيالية! العب الآن لاكتشاف الكنوز الخفية مع تجنب التنانين المخيفة. تعلم القواعد والنصائح هنا!">
+    <meta name="twitter:image" content="https://www.playfiddlebops.com/tw-1.jpg"/>
+    <meta name="author" content="Daniel Benmergui">
+  <meta name="robots" content="index, follow">
+  <link rel="shortcut icon" href="https://www.playfiddlebops.com/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        let iframeLoaded = false; // Track if iframe is loaded
+        const iframe = document.getElementById("dragonsweeper-iframe"); // Moved outside loadIframe to be accessible
+        const playButton = document.getElementById("playButton");
+
+        function loadIframe() {
+            iframe.src = "https://67b2efdbb4e658070a4e4d82--dragonsweeper.netlify.app/"; // Set the source
+             playButton.style.display = "none"; //Hide button
+            iframeLoaded = true; // Set to true so it's not loaded again
+            iframe.focus(); // Give focus to iframe for keyboard controls if necessary
+        }
+          playButton.addEventListener("click", loadIframe); // Listen for click
+    </script>
+</head>
+<body dir="rtl">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="/ar">Dragon<span class="light">sweeper</span></a></h1>
+            </div>
+            <nav>
+                <button class="nav-toggle" aria-label="تبديل التنقل">☰</button>
+                <ul class="nav-links">
+                    <li><a href="/ar#how-to-play">كيفية اللعب</a></li>
+                    <li><a href="/ar#features">الميزات</a></li>
+                    <li><a href="/ar#faq">الأسئلة الشائعة</a></li>
+                </ul>
+            </nav>
+      <select style="float:right;">
+        <option data-lang="en" data-url="/">English</option>
+        <option data-lang="zh-CN" data-url="/zh">简体中文</option>  
+        <option data-lang="es" data-url="/es">Español</option>
+        <option data-lang="fr" data-url="/fr">Français</option>
+        <option data-lang="de" data-url="/de">Deutsch</option>
+        <option data-lang="ja" data-url="/ja">日本語</option>
+        <option data-lang="ko" data-url="/ko">한국어</option>
+        <option data-lang="ar" data-url="/ar">العربية</option>
+        </select>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>العب Dragonsweeper الآن - أحدث نسخة من لعبة كاسحة الألغام الأكثر شعبية</h1>
+                <p>استكشف عالمًا خياليًا وتجنب التنانين الكامنة واكتشف الكنوز المخفية! تحدَّ ذكائك وحظك الآن.</p>
+        <div class="game-grid">
+          <!-- Game cards go here -->
+          <div class="game-card responsive-iframe-container">
+             <iframe id="dragonsweeper-iframe" src="" allowfullscreen width="100%" height="100%"></iframe>
+               <button id="playButton">ابدأ اللعبة</button>
+             </div>
+            </div>
+        </div>
+            </div>
+        </section>
+
+        <section class="core-features" id="features">
+            <div class="container">
+                <h2>ميزات اللعبة</h2>
+                <div class="core-feature-grid">
+                    <div class="core-feature-item">
+                        <i class="fas fa-eye"></i>
+                        <h4>خطوة بخطوة بحذر، الإستراتيجية أولاً</h4>
+                        <p>قد يكشف كل نقرة عن كنز أو يوقظ تنينًا نائمًا. استخدم منطقك وتفكيرك للمضي قدمًا بأمان وإكمال المستوى!</p>
+                    </div>
+                    <div class="core-feature-item">
+                        <i class="fas fa-dragon"></i>
+                        <h4>كاسحة الألغام في عالم خيالي</h4>
+                        <p>لا مزيد من الأرقام المملة، بل التنانين والكنوز المليئة بالألوان السحرية. انغمس في الرسومات الجميلة والمؤثرات الصوتية واستمتع بتجربة ممتعة في لعبة كاسحة الألغام لم يسبق لها مثيل!</p>
+                    </div>
+                    <div class="core-feature-item">
+                        <i class="fas fa-trophy"></i>
+                        <h4>تحدى حدودك</h4>
+                        <p>تقدم مستويات صعوبة متعددة لتلبية احتياجات اللاعبين من جميع المستويات. من المبتدئين إلى الخبراء، يمكن للجميع العثور على تحدٍ يناسبهم ويتجاوزون باستمرار حدودهم!</p>
+                    </div>
+                    <div class="core-feature-item">
+                        <i class="fas fa-brain"></i>
+                        <h4>درّب عقلك</h4>
+                        <p>Dragonsweeper ليست مجرد لعبة، ولكنها أيضًا أداة لتدريب عقلك. في اللعبة، تحتاج باستمرار إلى تحليل واستنتاج والحكم، مما يحسن مهاراتك في التفكير المنطقي.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="master-art" id="how-to-play">
+            <div class="container">
+                <h2>كيفية لعب Dragonsweeper</h2>
+                <p>قواعد Dragonsweeper بسيطة الفهم، ولكنها مليئة بالتحديات. هذه لعبة تختبر منطقك وحظك!</p>
+
+                <div class="steps">
+                    <div class="step">
+                        <h3>1. انقر على مربع</h3>
+                        <p>انقر على أي مربع غير معروف للكشف عما هو موجود أدناه. إذا نقرت على كنز، فستحصل على مكافأة؛ إذا نقرت على تنين، تنتهي اللعبة!</p>
+                    </div>
+                    <div class="step">
+                        <h3>2. تلميحات الأرقام</h3>
+                        <p>يشير الرقم الموجود على المربع إلى عدد المربعات من حوله (في المربعات الثمانية المحيطة) التي تحتوي على تنانين. على سبيل المثال، إذا عرض مربع الرقم "3"، فهناك ثلاثة تنانين مخفية حوله.</p>
+                    </div>
+                    <div class="step">
+                        <h3>3. ضع علامة على التنانين</h3>
+                        <p>استنادًا إلى تلميحات الأرقام، استخدم الأعلام لوضع علامة على المربعات التي تعتقد أنها تحتوي على تنانين. يمكن أن يساعدك وضع العلامات في تجنب النقرات العرضية وتخطيط إجراءاتك بشكل أفضل.</p>
+                    </div>
+                    <div class="step">
+                        <h3>4. أكمل بأمان</h3>
+                        <p>تجنب كل التنانين واكشف عن كل المربعات التي تحتوي على كنوز، وستكون قد أكملت المستوى بنجاح! تحدَّ صعوبات أكبر واربح المزيد من المكافآت!</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <h2>الأسئلة الشائعة حول Dragonsweeper</h2>
+    <div class="faq-item">
+      <h3>س: ما نوع اللعبة Dragonsweeper؟</h3>
+      <p>ج: Dragonsweeper هي لعبة ألغاز تعتمد على قواعد كاسحة الألغام الكلاسيكية، ولكن مع موضوع خيالي وعناصر لعب جديدة. تحتاج إلى تجنب التنانين واكتشاف الكنوز في اللعبة، واختبار منطقك وحظك.</p>
+    </div>
+    <div class="faq-item">
+      <h3>س: هل من السهل البدء بلعب Dragonsweeper؟</h3>
+      <p>ج: قواعد Dragonsweeper بسيطة الفهم، وحتى إذا لم تكن قد لعبت كاسحة الألغام من قبل، فيمكنك تعلمها بسرعة. لكن إتقان اللعبة يتطلب بعض الإستراتيجية والمهارة.</p>
+    </div>
+    <div class="faq-item">
+      <h3>س: ما هو المميز في Dragonsweeper؟</h3>
+      <p>ج: تتميز Dragonsweeper برسومات جميلة وموسيقى جذابة وموضوع خيالي فريد من نوعه. إنها لا تتيح لك فقط تجربة متعة كاسحة الألغام، ولكنها تغمرك أيضًا في عالم مليء بالمغامرات والمفاجآت.</p>
+    </div>
+    <div class="faq-item">
+      <h3>س: هل توجد نسخة مستقلة من Dragonsweeper؟</h3>
+      <p>ج: يمكن لعب Dragonsweeper مباشرة على الموقع الإلكتروني.</p>
+    </div>
+    <div class="faq-item">
+      <h3>س: أين يمكنني العثور على مزيد من المعلومات حول لعبة Dragonsweeper؟</h3>
+      <p>ج: يمكنك زيارة موقعنا على الإنترنت [رابط إلى موقع الويب الخاص بك] أو متابعة مشروع Dragonsweeper لـ DanielBen على itch.</p>
+    </div>
+  </div>
+</section>
+
+        <section class="about" id="about">
+          <div class="container">
+            <h2>حول Dragonsweeper</h2>
+            <p>Dragonsweeper هي لعبة ألغاز تسبب الإدمان وتتحدى عقلك. تعال واختبر حدودك!</p>
+          </div>
+       </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+        <div><a href="/ar/privacy" rel="nofollow">سياسة الخصوصية</a><a href="/ar/terms-of-service" rel="nofollow">شروط الخدمة</a></div>
+            <div class="copyright">© 2025 Dragonsweeper. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+    });
+    </script>
+    <script>
+      function goToLink(event) {
+        const select = event.target;
+        const selectedOption = select.options[select.selectedIndex];
+        const url = selectedOption.getAttribute('data-url');
+        if (url) {
+          window.location.href = url;
+        }
+      }
+  
+      // Add event listener
+      document.addEventListener('DOMContentLoaded', () => {
+        const select = document.querySelector('select');
+        if (select) {
+          select.addEventListener('change', goToLink);
+  
+          // Set current language based on the <html> tag's lang attribute
+          const htmlLang = document.documentElement.lang;
+          const options = Array.from(select.options);
+  
+          // Try to find an option that exactly matches the lang attribute
+          const currentOption = options.find(option =>
+            option.getAttribute('data-lang') === htmlLang
+          );
+  
+          if (currentOption) {
+            currentOption.selected = true;
+          } else {
+            // If no exact match is found, try to find a default option (data-lang="en" or "/")
+            let defaultOption = options.find(option =>
+              option.getAttribute('data-lang') === 'en' // common default
+            );
+  
+            if (!defaultOption) {
+              defaultOption = options.find(option =>
+                option.getAttribute('data-lang') === '/' // older convention
+              );
+            }
+  
+  
+            if (defaultOption) {
+              defaultOption.selected = true;
+            }
+          }
+        }
+      });
+      </script>
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style" data-a2a-scroll-show="0,60" style="bottom:0px; right:0px;">
+
+<a class="a2a_button_x"></a>
+<a class="a2a_button_reddit"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_telegram"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_linkedin"></a>
+    <a class="a2a_dd" href="https://www.playfiddlebops.com/share"></a>
+</div>
+<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">
+<a class="a2a_button_x"></a>
+<a class="a2a_button_reddit"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_telegram"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_linkedin"></a>
+    <a class="a2a_dd" href="https://www.playfiddlebops.com/share"></a>
+</div>
+
+<script defer src="https://static.addtoany.com/menu/page.js"></script>
+</body>
+</html>

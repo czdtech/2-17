@@ -1,0 +1,266 @@
+---
+import "../../styles/main.css";
+---
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragonsweeper - オンラインで最も人気のある最新版マインスイーパゲームをプレイ</title>
+    <meta name="description" content="Dragonsweeper は、ファンタジー要素を取り入れた無料のオンラインマインスイーパゲームです！今すぐプレイして、隠された宝物を発掘し、恐ろしいドラゴンを避けましょう。ゲームのルールとヒントはこちらで学べます！">
+    <meta name="keywords" content="Dragonsweeper, マインスイーパ, マインスイーパゲーム, オンラインゲーム, 無料ゲーム, パズルゲーム, ドラゴン, ファンタジーゲーム">
+    <meta property="og:title" content="Dragonsweeper - オンラインで最も人気のある最新版マインスイーパゲームをプレイ"/>
+    <meta property="og:description" content="Dragonsweeper は、ファンタジー要素を取り入れた無料のオンラインマインスイーパゲームです！今すぐプレイして、隠された宝物を発掘し、恐ろしいドラゴンを避けましょう。ゲームのルールとヒントはこちらで学べます！"/>
+    <meta property="og:url" content="https://www.playfiddlebops.com"/>
+    <meta property="og:site_name" content="Dragonsweeper"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:image" content="https://www.playfiddlebops.com/tw-1.png"/>
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="https://www.playfiddlebops.com"/>
+    <meta name="twitter:creator" content="Dragonsweeper"/>
+    <meta name="twitter:title" content="Dragonsweeper - オンラインで最も人気のある最新版マインスイーパゲームをプレイ"/>
+    <meta name="twitter:description" content="Dragonsweeper は、ファンタジー要素を取り入れた無料のオンラインマインスイーパゲームです！今すぐプレイして、隠された宝物を発掘し、恐ろしいドラゴンを避けましょう。ゲームのルールとヒントはこちらで学べます！"/>
+    <meta name="twitter:image" content="https://www.playfiddlebops.com/tw-1.jpg"/>
+    <meta name="author" content="Daniel Benmergui">
+  <meta name="robots" content="index, follow">
+  <link rel="shortcut icon" href="https://www.playfiddlebops.com/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        let iframeLoaded = false; // Track if iframe is loaded
+        const iframe = document.getElementById("dragonsweeper-iframe"); // Moved outside loadIframe to be accessible
+        const playButton = document.getElementById("playButton");
+
+        function loadIframe() {
+            iframe.src = "https://67b2efdbb4e658070a4e4d82--dragonsweeper.netlify.app/"; // Set the source
+             playButton.style.display = "none"; //Hide button
+            iframeLoaded = true; // Set to true so it's not loaded again
+            iframe.focus(); // Give focus to iframe for keyboard controls if necessary
+        }
+          playButton.addEventListener("click", loadIframe); // Listen for click
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="/ja">Dragon<span class="light">sweeper</span></a></h1>
+            </div>
+            <nav>
+                <button class="nav-toggle" aria-label="ナビゲーションの切り替え">☰</button>
+                <ul class="nav-links">
+                    <li><a href="/ja#how-to-play">遊び方</a></li>
+                    <li><a href="/ja#features">特徴</a></li>
+                    <li><a href="/ja#faq">FAQ</a></li>
+                </ul>
+            </nav>
+      <select style="float:right;">
+        <option data-lang="en" data-url="/">English</option>
+        <option data-lang="zh-CN" data-url="/zh">简体中文</option>  
+        <option data-lang="es" data-url="/es">Español</option>
+        <option data-lang="fr" data-url="/fr">Français</option>
+        <option data-lang="de" data-url="/de">Deutsch</option>
+        <option data-lang="ja" data-url="/ja">日本語</option>
+        <option data-lang="ko" data-url="/ko">한국어</option>
+        <option data-lang="ar" data-url="/ar">العربية</option>
+        </select>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Dragonsweeper - 最も人気のある最新版マインスイーパゲームを今すぐプレイ</h1>
+                <p>ファンタジー世界を探索し、潜むドラゴンを避け、隠された宝物を発掘しましょう！今すぐあなたの知恵と運を試しましょう。</p>
+        <div class="game-grid">
+          <!-- Game cards go here -->
+          <div class="game-card responsive-iframe-container">
+             <iframe id="dragonsweeper-iframe" src="" allowfullscreen width="100%" height="100%"></iframe>
+               <button id="playButton">ゲームを開始</button>
+             </div>
+            </div>
+        </div>
+            </div>
+        </section>
+
+        <section class="core-features" id="features">
+            <div class="container">
+                <h2>ゲームの特徴</h2>
+                <div class="core-feature-grid">
+                    <div class="core-feature-item">
+                        <i class="fas fa-eye"></i>
+                        <h4>一歩ごとに危険、戦略がすべて</h4>
+                        <p>クリックするたびに宝物が見つかるかもしれませんが、眠っているドラゴンを目覚めさせてしまう可能性もあります。あなたの論理的思考力と推理力を駆使して、一歩ずつ慎重に進み、安全にクリアしましょう！</p>
+                    </div>
+                    <div class="core-feature-item">
+                        <i class="fas fa-dragon"></i>
+                        <h4>ファンタジー世界の MineSweeper</h4>
+                        <p>退屈な数字ではなく、魔法の色に満ちたドラゴンと宝物です。美しいグラフィックと効果音に没頭し、これまでにないマインスイーパの楽しさを体験してください！</p>
+                    </div>
+                    <div class="core-feature-item">
+                        <i class="fas fa-trophy"></i>
+                        <h4>あなたの限界に挑戦</h4>
+                        <p>さまざまなレベルのプレイヤーのニーズを満たすために、複数の難易度レベルを提供します。初心者から上級者まで、自分に合ったチャレンジを見つけ、常に自分の限界を突破することができます！</p>
+                    </div>
+                    <div class="core-feature-item">
+                        <i class="fas fa-brain"></i>
+                        <h4>あなたの思考力を鍛える</h4>
+                        <p>Dragonsweeper は単なるゲームではなく、思考力を鍛えるためのツールでもあります。ゲームでは、常に分析、推論、判断を行う必要があり、それによって論理的思考能力が向上します。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="master-art" id="how-to-play">
+            <div class="container">
+                <h2>Dragonsweeper 遊び方</h2>
+                <p>Dragonsweeper のルールはシンプルで分かりやすいですが、挑戦に満ちています。これはあなたの論理と運を試すゲームです！</p>
+
+                <div class="steps">
+                    <div class="step">
+                        <h3>1、マスをクリック</h3>
+                        <p>未知のマスを任意にクリックして、その下の内容を明らかにします。宝物をクリックすると報酬を獲得できます。ドラゴンをクリックするとゲームオーバーです！</p>
+                    </div>
+                    <div class="step">
+                        <h3>2、数字のヒント</h3>
+                        <p>マス上の数字は、その周囲の 8 つのマスに、いくつドラゴンが隠されているかを示します。たとえば、マスに数字「3」が表示されている場合、その周囲には 3 つのマスにドラゴンが隠されています。</p>
+                    </div>
+                    <div class="step">
+                        <h3>3、ドラゴンをマーク</h3>
+                        <p>数字のヒントに基づいて、ドラゴンが隠されていると思われるマスを旗でマークします。マークは、誤ったクリックを避け、アクションをより適切に計画するのに役立ちます。</p>
+                    </div>
+                    <div class="step">
+                        <h3>4、安全にクリア</h3>
+                        <p>すべてのドラゴンを避け、宝物の隠されたすべてのマスを明らかにすると、レベルをクリアできます。より高い難易度に挑戦し、より多くの報酬を獲得してください！</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <h2>Dragonsweeper よくある質問</h2>
+    <div class="faq-item">
+      <h3>Q: Dragonsweeper はどのようなタイプのゲームですか?</h3>
+      <p>A: Dragonsweeper は、古典的なマインスイーパのルールに基づいたパズルゲームですが、ファンタジーのテーマと新しいゲーム要素が組み込まれています。ゲームでは、ドラゴンを避け、宝物を発掘し、あなたの論理と運を試す必要があります。</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q: Dragonsweeper は簡単に始められますか？</h3>
+      <p>A: Dragonsweeper のルールはシンプルで分かりやすく、マインスイーパをプレイしたことがない人でもすぐに始めることができます。ただし、このゲームをマスターするには、ある程度の戦略とスキルが必要です。</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q: Dragonsweeper の特別な点は何ですか?</h3>
+      <p>A: Dragonsweeper には、美しいグラフィック、キャッチーな音楽、そしてユニークなファンタジーのテーマがあります。マインスイーパの楽しさを体験できるだけでなく、冒険と驚きに満ちた世界に没頭できます。</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q: Dragonsweeper にスタンドアロン版はありますか？</h3>
+      <p>A: Dragonsweeper はウェブサイトで直接プレイできます。</p>
+    </div>
+    <div class="faq-item">
+      <h3>Q: Dragonsweeper ゲームの詳細情報はどこで入手できますか?</h3>
+      <p>A: 当社のウェブサイト [あなたのウェブサイトへのリンク] にアクセスするか、itch で DanielBen の Dragonsweeper プロジェクトをフォローしてください。</p>
+    </div>
+  </div>
+</section>
+
+        <section class="about" id="about">
+          <div class="container">
+            <h2>Dragonsweeper について</h2>
+            <p>Dragonsweeper はあなたを魅了するパズルゲームです。あなたの思考の限界に挑戦してみましょう。</p>
+          </div>
+       </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+        <div><a href="/ja/privacy" rel="nofollow">プライバシーポリシー</a><a href="/ja/terms-of-service" rel="nofollow">利用規約</a></div>
+            <div class="copyright">© 2025 Dragonsweeper. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+    });
+    </script>
+    <script>
+      function goToLink(event) {
+        const select = event.target;
+        const selectedOption = select.options[select.selectedIndex];
+        const url = selectedOption.getAttribute('data-url');
+        if (url) {
+          window.location.href = url;
+        }
+      }
+  
+      // Add event listener
+      document.addEventListener('DOMContentLoaded', () => {
+        const select = document.querySelector('select');
+        if (select) {
+          select.addEventListener('change', goToLink);
+  
+          // Set current language based on the <html> tag's lang attribute
+          const htmlLang = document.documentElement.lang;
+          const options = Array.from(select.options);
+  
+          // Try to find an option that exactly matches the lang attribute
+          const currentOption = options.find(option =>
+            option.getAttribute('data-lang') === htmlLang
+          );
+  
+          if (currentOption) {
+            currentOption.selected = true;
+          } else {
+            // If no exact match is found, try to find a default option (data-lang="en" or "/")
+            let defaultOption = options.find(option =>
+              option.getAttribute('data-lang') === 'en' // common default
+            );
+  
+            if (!defaultOption) {
+              defaultOption = options.find(option =>
+                option.getAttribute('data-lang') === '/' // older convention
+              );
+            }
+  
+  
+            if (defaultOption) {
+              defaultOption.selected = true;
+            }
+          }
+        }
+      });
+      </script>
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style" data-a2a-scroll-show="0,60" style="bottom:0px; right:0px;">
+
+<a class="a2a_button_x"></a>
+<a class="a2a_button_reddit"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_telegram"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_linkedin"></a>
+    <a class="a2a_dd" href="https://www.playfiddlebops.com/share"></a>
+</div>
+<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">
+<a class="a2a_button_x"></a>
+<a class="a2a_button_reddit"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_telegram"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_linkedin"></a>
+    <a class="a2a_dd" href="https://www.playfiddlebops.com/share"></a>
+</div>
+
+<script defer src="https://static.addtoany.com/menu/page.js"></script>
+</body>
+</html>

@@ -1,16 +1,16 @@
 ---
-import "../styles/main.css";
+import "../../styles/main.css";
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play Dragonsweeper Online - Free & Fresh Puzzle Game</title>
-    <meta name="description" content="Dragonsweeper is a free online Minesweeper variant game with a fantasy twist! Play now to uncover hidden treasures while avoiding fearsome dragons. ">
-    <meta name="keywords" content="Dragonsweeper, Minesweeper, Minesweeper Game, Online Game, Free Game,  Fantasy Game">
-    <meta property="og:title" content="Play Dragonsweeper Online - Free & Fresh Puzzle Game"/>
-    <meta property="og:description" content="Dragonsweeper is a free online Minesweeper variant game with a fantasy twist! Play now to uncover hidden treasures while avoiding fearsome dragons."/>
+    <title>Dragonsweeper - 在线畅玩最流行的新版扫雷游戏</title>
+    <meta name="description" content="Dragonsweeper 是一款免费在线扫雷变体游戏，融入了奇幻元素！ 现在就开始游玩，挖掘隐藏的宝藏，同时避开可怕的巨龙。 在这里学习游戏规则和技巧！">
+    <meta name="keywords" content="Dragonsweeper, 扫雷, 扫雷游戏, 在线游戏, 免费游戏, 益智游戏, 巨龙, 奇幻游戏">
+    <meta property="og:title" content="Dragonsweeper - 在线畅玩最流行的新版扫雷游戏"/>
+    <meta property="og:description" content="Dragonsweeper 是一款免费在线扫雷变体游戏，融入了奇幻元素！ 现在就开始游玩，挖掘隐藏的宝藏，同时避开可怕的巨龙。 在这里学习游戏规则和技巧！"/>
     <meta property="og:url" content="https://www.playfiddlebops.com"/>
     <meta property="og:site_name" content="Dragonsweeper"/>
     <meta property="og:locale" content="en_US"/>
@@ -19,12 +19,12 @@ import "../styles/main.css";
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content="https://www.playfiddlebops.com"/>
     <meta name="twitter:creator" content="Dragonsweeper"/>
-    <meta name="twitter:title" content="Play Dragonsweeper Online - Free & Fresh Puzzle Game"/>
-    <meta name="twitter:description" content="Dragonsweeper is a free online Minesweeper variant game with a fantasy twist! Play now to uncover hidden treasures while avoiding fearsome dragons. Learn the rules and tips here!"/>
+    <meta name="twitter:title" content="Dragonsweeper - 在线畅玩最流行的新版扫雷游戏"/>
+    <meta name="twitter:description" content="Dragonsweeper 是一款免费在线扫雷变体游戏，融入了奇幻元素！ 现在就开始游玩，挖掘隐藏的宝藏，同时避开可怕的巨龙。 在这里学习游戏规则和技巧！"/>
     <meta name="twitter:image" content="https://www.playfiddlebops.com/tw-1.jpg"/>
     <meta name="author" content="Daniel Benmergui">
-    <meta name="robots" content="index, follow">
-    <link rel="shortcut icon" href="https://www.playfiddlebops.com/favicon.ico" />
+  <meta name="robots" content="index, follow">
+  <link rel="shortcut icon" href="https://www.playfiddlebops.com/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -47,14 +47,14 @@ import "../styles/main.css";
     <header>
         <div class="container">
             <div class="logo">
-                <h1><a href="/">Dragon<span class="light">sweeper</span></a></h1>
+                <h1><a href="/zh">Dragon<span class="light">sweeper</span></a></h1>
             </div>
             <nav>
-                <button class="nav-toggle" aria-label="Toggle Navigation">☰</button>
+                <button class="nav-toggle" aria-label="切换导航">☰</button>
                 <ul class="nav-links">
-                    <li><a href="#how-to-play">How to Play</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="/zh#how-to-play">玩法</a></li>
+                    <li><a href="/zh#features">特色</a></li>
+                    <li><a href="/zh#faq">FAQ</a></li>
                 </ul>
             </nav>
       <select style="float:right;">
@@ -73,42 +73,42 @@ import "../styles/main.css";
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Play Dragonsweeper Online - Free & Fresh Puzzle Game</h1>
-                <p>Explore a fantasy world, avoid lurking dragons, and uncover hidden treasures! Challenge your wit and luck now.</p>
-                <div class="game-grid">
-                    <!-- Game cards go here -->
-                    <div class="game-card responsive-iframe-container">
-                       <iframe id="dragonsweeper-iframe" src="" allowfullscreen width="100%" height="100%"></iframe>
-                           <button id="playButton">Play Game</button>
-                       </div>
-                      </div>
-                </div>
+                <h1>立即畅玩 Dragonsweeper - 最流行的新版扫雷游戏</h1>
+                <p>探索奇幻世界， 避开潜伏的巨龙， 挖掘隐藏的宝藏！现在就开始挑战你的智慧和运气。</p>
+        <div class="game-grid">
+          <!-- Game cards go here -->
+          <div class="game-card responsive-iframe-container">
+             <iframe id="dragonsweeper-iframe" src="" allowfullscreen width="100%" height="100%"></iframe>
+               <button id="playButton">开始游戏</button>
+             </div>
+            </div>
+        </div>
             </div>
         </section>
 
         <section class="core-features" id="features">
             <div class="container">
-                <h2>Game Features</h2>
+                <h2>游戏特色</h2>
                 <div class="core-feature-grid">
                     <div class="core-feature-item">
                         <i class="fas fa-eye"></i>
-                        <h4>Strategic Gameplay, Every Step Counts</h4>
-                        <p>Every click could reveal treasure or awaken a sleeping dragon. Use your logic and reasoning to proceed safely and clear the level!</p>
+                        <h4>步步惊心， 策略至上</h4>
+                        <p>每一次点击都可能发现宝藏， 也可能惊醒沉睡的巨龙。 运用你的逻辑和推理能力， 步步为营， 才能安全通关！</p>
                     </div>
                     <div class="core-feature-item">
                         <i class="fas fa-dragon"></i>
-                        <h4>Minesweeper in a Fantasy World</h4>
-                        <p>No more boring numbers, but dragons and treasures full of magical colors. Immerse yourself in beautiful visuals and sound effects, and experience unprecedented Minesweeper fun!</p>
+                        <h4>奇幻世界的扫雷</h4>
+                        <p>不再是枯燥的数字， 而是充满魔幻色彩的龙与宝藏。 沉浸在精美的画面和音效中， 体验前所未有的扫雷乐趣！</p>
                     </div>
                     <div class="core-feature-item">
                         <i class="fas fa-trophy"></i>
-                        <h4>Challenge Your Limits</h4>
-                        <p>Offers multiple difficulty levels to meet the needs of players of all skill levels. From novice to expert, everyone can find a challenge that suits them and constantly push their limits!</p>
+                        <h4>挑战你的极限</h4>
+                        <p>提供多种难度级别， 满足不同水平的玩家的需求。 从新手到专家， 都能找到适合自己的挑战， 不断突破自己的极限！</p>
                     </div>
                     <div class="core-feature-item">
                         <i class="fas fa-brain"></i>
-                        <h4>Exercise Your Mind</h4>
-                        <p>Dragonsweeper is not just a game, but also a tool for exercising your mind. In the game, you need to constantly analyze, reason, and judge, thereby improving your logical thinking skills.</p>
+                        <h4>锻炼你的思维</h4>
+                        <p> Dragonsweeper 不仅仅是一个游戏， 也是一个锻炼思维的工具。 在游戏中， 你需要不断分析、推理和判断， 从而提升你的逻辑思维能力。</p>
                     </div>
                 </div>
             </div>
@@ -116,25 +116,25 @@ import "../styles/main.css";
 
         <section class="master-art" id="how-to-play">
             <div class="container">
-                <h2>How to Play Dragonsweeper</h2>
-                <p>Dragonsweeper's rules are simple to understand, yet full of challenges. This is a game that tests your logic and luck!</p>
+                <h2>Dragonsweeper 玩法说明</h2>
+                <p>Dragonsweeper 的规则简单易懂， 却又充满挑战。 这是一个考验你的逻辑和运气的游戏！</p>
 
                 <div class="steps">
                     <div class="step">
-                        <h3>1. Click a Square</h3>
-                        <p>Click on any unknown square to reveal what's underneath. If you click on a treasure, you'll get a reward; if you click on a dragon, the game is over!</p>
+                        <h3>1、点击方格</h3>
+                        <p>点击任意一个未知的方格， 揭开它下面的内容。 如果你点击的是宝藏， 你将获得奖励； 如果你点击的是巨龙， 游戏结束！</p>
                     </div>
                     <div class="step">
-                        <h3>2. Number Hints</h3>
-                        <p>The number on a square tells you how many squares around it (in the eight surrounding squares) contain dragons. For example, if a square displays the number "3", then there are three dragons hidden around it.</p>
+                        <h3>2、数字提示</h3>
+                        <p>方格上的数字告诉你， 在它周围的八个方格中， 有多少个方格藏有巨龙。 例如， 如果一个方格上显示数字 “3”， 那么它周围就有三个方格藏有巨龙。</p>
                     </div>
                     <div class="step">
-                        <h3>3. Mark Dragons</h3>
-                        <p>Based on the number hints, use flags to mark the squares you think contain dragons. Marking can help you avoid accidental clicks and better plan your actions.</p>
+                        <h3>3、标记巨龙</h3>
+                        <p>根据数字的提示， 使用旗帜标记你认为藏有巨龙的方格。 标记可以帮助你避免误触， 并更好地规划你的行动。</p>
                     </div>
                     <div class="step">
-                        <h3>4. Clear Safely</h3>
-                        <p>Avoid all dragons and reveal all squares containing treasure, and you've successfully cleared the level! Challenge higher difficulties and win more rewards!</p>
+                        <h3>4、安全通关</h3>
+                        <p> 避开所有巨龙， 并揭开所有藏有宝藏的方格， 你就成功通关了！ 挑战更高的难度， 赢取更多的奖励！</p>
                     </div>
                 </div>
 
@@ -143,34 +143,34 @@ import "../styles/main.css";
 
 <section class="faq" id="faq">
   <div class="container">
-    <h2>Dragonsweeper FAQs</h2>
+    <h2>Dragonsweeper 常见问题</h2>
     <div class="faq-item">
-      <h3>Q: What type of game is Dragonsweeper?</h3>
-      <p>A: Dragonsweeper is a puzzle game based on the classic Minesweeper rules, but with a fantasy theme and new gameplay elements. You need to avoid dragons and uncover treasures in the game, testing your logic and luck.</p>
+      <h3>Q: Dragonsweeper 是什么类型的游戏？</h3>
+      <p>A: Dragonsweeper 是一款基于经典扫雷规则的益智游戏， 但融入了奇幻主题和全新的游戏元素。 你需要在游戏中避开巨龙， 挖掘宝藏， 考验你的逻辑和运气。</p>
     </div>
     <div class="faq-item">
-      <h3>Q: Is Dragonsweeper easy to pick up?</h3>
-      <p>A: Dragonsweeper's rules are easy to understand, and even if you've never played Minesweeper, you can pick it up quickly. But mastering the game requires some strategy and skill.</p>
+      <h3>Q: Dragonsweeper 容易上手吗？</h3>
+      <p>A: Dragonsweeper 的规则简单易懂， 即使你没有玩过扫雷， 也能很快上手。 但要精通这款游戏， 需要一定的策略和技巧。</p>
     </div>
     <div class="faq-item">
-      <h3>Q: What's special about Dragonsweeper?</h3>
-      <p>A: Dragonsweeper has beautiful graphics, catchy music, and a unique fantasy theme. It not only lets you experience the fun of Minesweeper, but also immerses you in a world full of adventure and surprises.</p>
+      <h3>Q: Dragonsweeper 有什么特别之处？</h3>
+      <p>A: Dragonsweeper 拥有精美的画面、 动听的音乐， 以及独特的奇幻主题。 它不仅能让你体验扫雷的乐趣， 还能让你沉浸在一个充满冒险和惊喜的世界中。</p>
     </div>
     <div class="faq-item">
-      <h3>Q: Is there a standalone version of Dragonsweeper?</h3>
-      <p>A: Dragonsweeper can be played directly on the website.</p>
+      <h3>Q: Dragonsweeper 有单机版吗？</h3>
+      <p>A:  Dragonsweeper 可以在网站直接进行游玩.</p>
     </div>
     <div class="faq-item">
-      <h3>Q: Where can I find more Dragonsweeper game information?</h3>
-      <p>A: You can visit our website [Link to your website] or follow DanielBen's Dragonsweeper project on itch.</p>
+      <h3>Q: 我可以在哪里找到更多 Dragonsweeper 游戏信息？</h3>
+      <p>A: 您可以访问我们的网站 [链接到你的网站] 或在 itch 上关注 DanielBen 的 Dragonsweeper 项目。</p>
     </div>
   </div>
 </section>
 
         <section class="about" id="about">
           <div class="container">
-            <h2>About Dragonsweeper</h2>
-            <p>Dragonsweeper is an addictive puzzle game that will challenge your mind. Come test your limits!</p>
+            <h2>关于 Dragonsweeper</h2>
+            <p>Dragonsweeper 是一款让你着迷的益智游戏，快来挑战你的思维极限吧。</p>
           </div>
        </section>
 
@@ -178,7 +178,7 @@ import "../styles/main.css";
 
     <footer>
         <div class="container">
-        <div><a href="/privacy">Privacy Policy</a><a href="/terms-of-service">Terms of Service</a></div>
+        <div><a href="/zh/privacy" rel="nofollow">隐私政策</a><a href="/zh/terms-of-service" rel="nofollow">服务条款</a></div>
             <div class="copyright">© 2025 Dragonsweeper. All rights reserved.</div>
         </div>
     </footer>
