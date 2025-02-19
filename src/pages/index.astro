@@ -82,12 +82,13 @@ import "../styles/main.css";
           <div class="game-card responsive-iframe-container">
              <iframe id="Dragonsweeper-iframe" src="" allowfullscreen width="100%" height="100%"></iframe>
                <button id="playButton">Play</button>
+               <button id="fullscreenButton">Fullscreen</button>
              </div>
             </div>
         </div>
             </div>
         </section>
-        
+
         <section class="core-features" id="features">
             <div class="container">
                 <h2>Game Features</h2>
@@ -241,6 +242,66 @@ import "../styles/main.css";
           }
         }
       });
+      </script>
+      <script>
+    const fullscreenButton = document.getElementById("fullscreenButton");
+    const gameCard = document.querySelector(".game-card"); // Select the container
+
+    fullscreenButton.addEventListener("click", () => {
+        if (!document.fullscreenElement) {
+            // Enter fullscreen
+            gameCard.classList.add("fullscreen-enabled");  // Apply styles to container
+
+            if (gameCard.requestFullscreen) {
+                gameCard.requestFullscreen();
+            } else if (gameCard.mozRequestFullScreen) { /* Firefox */
+                gameCard.mozRequestFullScreen();
+            } else if (gameCard.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                gameCard.webkitRequestFullscreen();
+            } else if (gameCard.msRequestFullscreen) { /* IE/Edge */
+                gameCard.msRequestFullscreen();
+            }
+        } else {
+            // Exit fullscreen
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+                gameCard.classList.remove("fullscreen-enabled"); // Remove styles
+            } else if (document.mozCancelFullScreen) { /* Firefox */
+                document.mozCancelFullScreen();
+                gameCard.classList.remove("fullscreen-enabled"); // Remove styles
+            } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+                document.webkitExitFullscreen();
+                gameCard.classList.remove("fullscreen-enabled"); // Remove styles
+            } else if (document.msExitFullscreen) { /* IE/Edge */
+                document.msExitFullscreen();
+                gameCard.classList.remove("fullscreen-enabled"); // Remove styles
+            }
+        }
+    });
+
+    document.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement) {
+      gameCard.classList.remove("fullscreen-enabled");
+        }
+    });
+
+    document.addEventListener('mozfullscreenchange', () => {
+        if (!document.mozFullScreen) {
+            gameCard.classList.remove("fullscreen-enabled");
+        }
+    });
+
+    document.addEventListener('webkitfullscreenchange', () => {
+        if (document.webkitIsFullScreen === false) {
+            gameCard.classList.remove("fullscreen-enabled");
+        }
+    });
+
+    document.addEventListener('msfullscreenchange', () => {
+        if (document.msFullscreenElement === null) {
+            gameCard.classList.remove("fullscreen-enabled");
+        }
+    });
       </script>
 <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style" data-a2a-scroll-show="0,60" style="bottom:0px; right:0px;">
 

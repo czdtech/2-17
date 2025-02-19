@@ -623,6 +623,20 @@ footer .copyright{text-align:right;}
             z-index: 11; /* Above the iframe */
             border-radius: 5px;
         }
+.fullscreen-enabled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; /* Ensure it's on top */
+  background: #fff; /* Optional: Background color for fullscreen */
+}
+
+.fullscreen-enabled iframe {
+  width: 100%;
+  height: 100%;
+}
 @media screen and (min-width: 980px) {
     .a2a_floating_style.a2a_default_style { display: none; }
 }
