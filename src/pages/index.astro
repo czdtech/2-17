@@ -249,42 +249,29 @@ import "../styles/main.css";
     const dragonsweeperIframe = document.getElementById("dragonsweeper-iframe");
 
     function calculateScale() {
-        //const screenWidth = window.innerWidth;
-        //const screenHeight = window.innerHeight;
+
         const screenWidth = document.documentElement.clientWidth;
         const screenHeight = document.documentElement.clientHeight;
 
-        //console.log("screenHeight:" + screenHeight);
-        //console.log("screenWidth:" + screenWidth);
-        const iframeWidth = screenHeight; // 旋转后iframe的宽度
-        const iframeHeight = screenWidth; // 旋转后iframe的高度
+        const iframeWidth = screenHeight; 
+        const iframeHeight = screenWidth; 
 
         const scaleX = screenWidth / iframeWidth;
         const scaleY = screenHeight / iframeHeight;
 
-        // 使用较小的缩放比例以确保iframe完全可见
+        
         let scale = Math.min(scaleX, scaleY);
-        //scale = scale.toFixed(2);
 
-        //console.log("scaleX:" + scaleX);
-        //console.log("scaleY:" + scaleY);
-        //console.log("scale:" + scale);
-        //console.log("----------------------");
-
-        // 应用缩放比例
+        
         document.documentElement.style.setProperty('--scale', scale);
-        //dragonsweeperIframe.style.transform = `rotate(90deg) scale(${scale})`;
 
     }
 
     fullscreenButton.addEventListener("click", () => {
         if (!document.fullscreenElement) {
-            // 进入全屏
+            
             gameCard.classList.add("fullscreen-enabled");
 
-            //console.log("全屏:");
-            //console.log("screenHeight:" + screenHeight);
-            //console.log("screenWidth:" + screenWidth);
             calculateScale();
 
             if (gameCard.requestFullscreen) {
@@ -297,7 +284,7 @@ import "../styles/main.css";
                 gameCard.msRequestFullscreen();
             }
         } else {
-            // 退出全屏
+            
             if (document.exitFullscreen) {
                 document.exitFullscreen();
                 gameCard.classList.remove("fullscreen-enabled");
