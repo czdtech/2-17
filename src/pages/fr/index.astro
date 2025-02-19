@@ -31,11 +31,11 @@ import "../../styles/main.css";
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script>
         let iframeLoaded = false; // Track if iframe is loaded
-        const iframe = document.getElementById("dragonsweeper-iframe"); // Moved outside loadIframe to be accessible
+        const iframe = document.getElementById("Dragonsweeper-iframe"); // Moved outside loadIframe to be accessible
         const playButton = document.getElementById("playButton");
 
         function loadIframe() {
-            iframe.src = "https://67b2efdbb4e658070a4e4d82--dragonsweeper.netlify.app/"; // Set the source
+            iframe.src = "https://67b43ed36dd96b00083f6051--dragonsweeper.netlify.app/"; // Set the source
              playButton.style.display = "none"; //Hide button
             iframeLoaded = true; // Set to true so it's not loaded again
             iframe.focus(); // Give focus to iframe for keyboard controls if necessary
@@ -78,7 +78,7 @@ import "../../styles/main.css";
         <div class="game-grid">
           <!-- Game cards go here -->
           <div class="game-card responsive-iframe-container">
-             <iframe id="dragonsweeper-iframe" src="" allowfullscreen width="100%" height="100%"></iframe>
+             <iframe id="Dragonsweeper-iframe" src="" allowfullscreen width="100%" height="100%"></iframe>
                <button id="playButton">Lancer le jeu</button>
              </div>
             </div>
