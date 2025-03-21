@@ -658,3 +658,27 @@ footer .copyright{text-align:right;}
   @media screen and (max-width: 980px) {
     .a2a_floating_style.a2a_vertical_style { display: none; }
 }
+
+
+    .games{padding-bottom:40px}
+    .games h2{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #FFFFFF;}
+  .game .game-l-2 img {
+    width: 100%!important;
+    height:100%!important;
+    min-height:170px;
+    margin: 0 auto;}
+      @media screen and (max-width: 980px){
+        .game-card .game-iframe-sprunki {
+     width:100%;}
+      }
+
+.game p {
+  margin-bottom: 20px;
+  font-weight: 300;
+  text-align:center;
+
+}

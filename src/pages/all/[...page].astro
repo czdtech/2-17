@@ -1,0 +1,203 @@
+---
+import "../../styles/main.css";
+import Nav from '../nav.astro';
+export function getStaticPaths({ paginate }) {
+  const astronautPages = [
+    { astronaut: ["/google-minesweeper/","/google minesweeper.png","Google Minesweeper"]},
+    { astronaut: ["/minesweeper/","/minesweeper.png","Minesweeper"]},
+    { astronaut: ["/","/play-bg-1.png","Dragonsweeper"]},
+  ];
+
+  return paginate(astronautPages, { pageSize: 30 });
+}
+const { page } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Games - Free & Puzzle Game On dragonsweeper.net</title>
+    <meta name="description" content="">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="https://www.dragonsweepers.net/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+.pagination{width: 100%;text-align: center;padding: 10px 0;margin:40px 0}
+.pagination b {
+    width:40px;
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin: 10px 5px;
+    background: #666;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.pagination a {
+    width:40px;
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin: 10px 5px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    text-decoration: none;
+}
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JN27Z9NMQ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JN27Z9NMQ7');
+</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="/">Dragon<span class="light">sweeper</span></a></h1>
+            </div>
+                <Nav />
+      <select style="float:right;">
+        <option data-lang="en" data-url="/">English</option>
+        <option data-lang="zh-CN" data-url="/zh/">简体中文</option>  
+        <option data-lang="es" data-url="/es/">Español</option>
+        <option data-lang="fr" data-url="/fr/">Français</option>
+        <option data-lang="de" data-url="/de/">Deutsch</option>
+        <option data-lang="ja" data-url="/ja/">日本語</option>
+        <option data-lang="ko" data-url="/ko/">한국어</option>
+        <option data-lang="ar" data-url="/ar/">العربية</option>
+        </select>
+        </div>
+    </header>
+    <main>
+
+
+
+        <section class="hero games">
+            <div class="container">
+              <h2>All Games</h2>
+                 <div class="game-grid">
+{page.data.map(({ astronaut }) =>
+                   <div class="game"><a href={astronaut[0]} title={astronaut[2]}>
+                        <div class="game-logo game-l-2">
+                            <img src={astronaut[1]} alt={astronaut[2]}>
+                         </div>
+                        <p>{astronaut[2]}</p></a>
+                    </div>)}
+
+
+                 </div>
+            </div>
+        </section>
+<div class="pagination">
+
+<a href={page.url.prev}>«</a>
+<b class="current">{page.currentPage}</b>
+<a href={page.url.next}>»</a>
+
+</div>
+
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+        <div><a href="/privacy/" rel="nofollow">Privacy Policy</a><a href="/terms-of-service/" rel="nofollow">Terms of Service</a></div>
+            <div class="copyright">© 2025 dragonsweepers.net All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+    });
+    </script>
+    <script>
+      function goToLink(event) {
+        const select = event.target;
+        const selectedOption = select.options[select.selectedIndex];
+        const url = selectedOption.getAttribute('data-url');
+        if (url) {
+          window.location.href = url;
+        }
+      }
+  
+      // Add event listener
+      document.addEventListener('DOMContentLoaded', () => {
+        const select = document.querySelector('select');
+        if (select) {
+          select.addEventListener('change', goToLink);
+  
+          // Set current language based on the <html> tag's lang attribute
+          const htmlLang = document.documentElement.lang;
+          const options = Array.from(select.options);
+  
+          // Try to find an option that exactly matches the lang attribute
+          const currentOption = options.find(option =>
+            option.getAttribute('data-lang') === htmlLang
+          );
+  
+          if (currentOption) {
+            currentOption.selected = true;
+          } else {
+            // If no exact match is found, try to find a default option (data-lang="en" or "/")
+            let defaultOption = options.find(option =>
+              option.getAttribute('data-lang') === 'en' // common default
+            );
+  
+            if (!defaultOption) {
+              defaultOption = options.find(option =>
+                option.getAttribute('data-lang') === '/' // older convention
+              );
+            }
+  
+  
+            if (defaultOption) {
+              defaultOption.selected = true;
+            }
+          }
+        }
+      });
+      </script>
+
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style" data-a2a-scroll-show="0,60" style="bottom:0px; right:0px;">
+
+<a class="a2a_button_x"></a>
+<a class="a2a_button_reddit"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_telegram"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_linkedin"></a>
+    <a class="a2a_dd" href="https://www.dragonsweepers.net/"></a>
+</div>
+<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">
+<a class="a2a_button_x"></a>
+<a class="a2a_button_reddit"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_telegram"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_linkedin"></a>
+    <a class="a2a_dd" href="https://www.dragonsweepers.net/"></a>
+</div>
+
+<script defer src="https://static.addtoany.com/menu/page.js"></script>
+</body>
+</html>

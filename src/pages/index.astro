@@ -1,38 +1,65 @@
 ---
 import "../styles/main.css";
+import TrendingGames from './trending-games.astro';
+import Nav from './nav.astro';
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play Dragonsweeper Online - Free & Fresh Puzzle Game</title>
-    <meta name="description" content="Dragonsweeper is a free online Minesweeper variant game with a fantasy twist! Play now to uncover hidden treasures while avoiding fearsome dragons. ">
-    <meta name="keywords" content="Dragonsweeper, Minesweeper, Minesweeper Game, Online Game, Free Game,  Fantasy Game">
-    <meta property="og:title" content="Play Dragonsweeper Online - Free & Fresh Puzzle Game"/>
+    <title>Dragonsweeper - Free & Fresh Puzzle Dragonsweeper Game</title>
+    <meta name="description" content="Dragonsweeper is a free online Minesweeper variant game with a fantasy twist! Play now to uncover hidden treasures while avoiding fearsome dragons.">
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="https://www.dragonsweepers.net/"/>
+    <link rel="alternate" hreflang="x-default" href="https://www.dragonsweepers.net/" />
+    <link rel="alternate" hreflang="en" href="https://www.dragonsweepers.net/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://www.dragonsweepers.net/zh/" />
+    <link rel="alternate" hreflang="de" href="https://www.dragonsweepers.net/de/" />
+    <link rel="alternate" hreflang="fr" href="https://www.dragonsweepers.net/fr/" />
+    <link rel="alternate" hreflang="es" href="https://www.dragonsweepers.net/es/" />
+    <link rel="alternate" hreflang="ja" href="https://www.dragonsweepers.net/ja/" />
+    <link rel="alternate" hreflang="ko" href="https://www.dragonsweepers.net/ko/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Dragonsweeper - Free & Fresh Puzzle Dragonsweeper Game",
+      "alternateName": "dragonsweepers.net",
+      "url": "https://www.dragonsweepers.net/",
+      "description": "Dragonsweeper is a free online Minesweeper variant game with a fantasy twist! Play now to uncover hidden treasures while avoiding fearsome dragons.",
+      "aggregateRating": {
+          "@type": "AggregateRating",
+          "worstRating": 1,
+          "bestRating": 10,
+          "ratingValue": "7.7",
+          "ratingCount": "235"
+      },
+    }
+    </script>
+    
+    <meta property="og:title" content="Dragonsweeper - Free & Fresh Puzzle Dragonsweeper Game"/>
     <meta property="og:description" content="Dragonsweeper is a free online Minesweeper variant game with a fantasy twist! Play now to uncover hidden treasures while avoiding fearsome dragons."/>
     <meta property="og:url" content="https://www.dragonsweepers.net"/>
     <meta property="og:site_name" content="Dragonsweeper"/>
     <meta property="og:locale" content="en_US"/>
-    <meta property="og:image" content="https://www.dragonsweepers.net/tw-1.png"/>
+    <meta property="og:image" content="https://www.dragonsweepers.net/play-bg.png"/>
     <meta property="og:type" content="website"/>
+
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content="https://www.dragonsweepers.net"/>
-    <meta name="twitter:creator" content="Dragonsweeper"/>
-    <meta name="twitter:title" content="Play Dragonsweeper Online - Free & Fresh Puzzle Game"/>
-    <meta name="twitter:description" content="Dragonsweeper is a free online Minesweeper variant game with a fantasy twist! Play now to uncover hidden treasures while avoiding fearsome dragons. Learn the rules and tips here!"/>
-    <meta name="twitter:image" content="https://www.dragonsweepers.net/tw-1.jpg"/>
-    <meta name="author" content="Daniel Benmergui">
-    <meta name="robots" content="index, follow">
+    <meta name="twitter:title" content="Dragonsweeper - Free & Fresh Puzzle Dragonsweeper Game"/>
+    <meta name="twitter:description" content="Dragonsweeper is a free online Minesweeper variant game with a fantasy twist! Play now to uncover hidden treasures while avoiding fearsome dragons."/>
+    <meta name="twitter:image" content="https://www.dragonsweepers.net/play-bg.png"/>
     <link rel="shortcut icon" href="https://www.dragonsweepers.net/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="canonical" href="https://www.dragonsweepers.net/"/>
+
     <script>
         let iframeLoaded = false; // Track if iframe is loaded
-        const iframe = document.getElementById("Dragonsweeper-iframe"); // Moved outside loadIframe to be accessible
+        const iframe = document.getElementById("dragonsweeper-iframe"); // Moved outside loadIframe to be accessible
         const playButton = document.getElementById("playButton");
 
         function loadIframe() {
@@ -59,15 +86,9 @@ import "../styles/main.css";
             <div class="logo">
                 <h1><a href="/">Dragon<span class="light">sweeper</span></a></h1>
             </div>
-            <nav>
-                <button class="nav-toggle" aria-label="Toggle Navigation">☰</button>
-                <ul class="nav-links">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#how-to-play">How to Play</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
-            </nav>
+
+            <Nav />
+
       <select style="float:right;">
         <option data-lang="en" data-url="/">English</option>
         <option data-lang="zh-CN" data-url="/zh/">简体中文</option>  
@@ -84,12 +105,12 @@ import "../styles/main.css";
 
         <section class="hero">
             <div class="container">
-                <h2>Play Dragonsweeper Online - Free & Fresh Puzzle Game</h2>
+                <h2>Play Dragonsweeper Online</h2>
                 <p>Explore a fantasy world, avoid lurking dragons, and uncover hidden treasures! Challenge your wit and luck now.</p>
         <div class="game-grid">
           <!-- Game cards go here -->
           <div class="game-card responsive-iframe-container">
-             <iframe id="Dragonsweeper-iframe" src="" allowfullscreen width="100%" height="100%"></iframe>
+             <iframe id="dragonsweeper-iframe" src="" allowfullscreen width="100%" height="100%"></iframe>
                <button id="playButton">Play</button>
                <button id="fullscreenButton">Fullscreen</button>
              </div>
@@ -97,6 +118,8 @@ import "../styles/main.css";
         </div>
             </div>
         </section>
+
+    <TrendingGames/>
 
         <section class="core-features" id="features">
             <div class="container">
@@ -182,7 +205,7 @@ import "../styles/main.css";
         <section class="about" id="about">
           <div class="container">
             <h2>About Dragonsweeper</h2>
-            <p>Dragonsweeper is an addictive puzzle game that will challenge your mind. Come test your limits!</p>
+            <p>Dragonsweeper is an addictive puzzle game that will challenge your mind. Come test your limits! If you have any questions or suggestions, please contact us: chongzhidatech@gmail.com</p>
           </div>
        </section>
 
@@ -191,7 +214,7 @@ import "../styles/main.css";
     <footer>
         <div class="container">
         <div><a href="https://dragon-sweeper.org/" title="Dragon Sweeper">Dragon Sweeper</a><a href="https://www.playfiddlebops.com/" title="Fiddlebops">Fiddlebops</a><a href="/privacy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a></div>
-            <div class="copyright">© 2025 Dragonsweeper. All rights reserved.</div>
+            <div class="copyright">© 2025 dragonsweepers.net All rights reserved.</div>
         </div>
     </footer>
 

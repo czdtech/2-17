@@ -1,0 +1,267 @@
+---
+import "../styles/main.css";
+import TrendingGames from './trending-games.astro';
+import Nav from './nav.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Minesweeper Online - Minesweeper Free & Puzzle Game </title>
+
+    <meta name="description" content="Play the classic puzzle game Minesweeper online for free. No download required. Can you uncover all the mines?">
+    <meta name="robots" content="index, follow"/>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Play Minesweeper Online",
+      "alternateName": "dragonsweepers.net",
+      "url": "https://www.dragonsweepers.net/minesweeper/",
+      "description": "Play the classic puzzle game Minesweeper online for free. No download required. Can you uncover all the mines?",
+      "aggregateRating": {
+          "@type": "AggregateRating",
+          "worstRating": 1,
+          "bestRating": 10,
+          "ratingValue": "9.5",
+          "ratingCount": "635"
+      },
+    }
+    </script>
+    
+    <meta property="og:title" content="Play Minesweeper Online - Minesweeper Free & Puzzle Game"/>
+    <meta property="og:description" content="Play the classic puzzle game Minesweeper online for free. No download required. Can you uncover all the mines?"/>
+    <meta property="og:url" content="https://dragonsweepers.net/minesweeper/"/>
+    <meta property="og:site_name" content="Play Minesweeper Online"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:image" content="https://www.dragonsweepers.net/minesweeper.png"/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="https://dragonsweepers.net/"/>
+    <meta name="twitter:title" content="Play Minesweeper Online"/>
+    <meta name="twitter:description" content="Play the classic puzzle game Minesweeper online for free. No download required. Can you uncover all the mines?"/>
+    <meta name="twitter:image" content="https://www.dragonsweepers.net/minesweeper.png"/>
+
+    <link rel="shortcut icon" href="https://www.dragonsweepers.net/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+.hero{padding-top:40px}
+.hero h2{font-size:38px}
+.responsive-iframe-containers{
+  float:left;
+    width: 600px;
+    margin:0 auto;
+    padding:0;
+     height:500px;
+     background-color:#fff;
+     position: relative;
+     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(/minesweeper.png);
+     background-color:#333;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size:cover;
+}
+.game-card{box-shadow:none}
+.faq-item {font-size: 18px;font-weight: 500;line-height:30px}
+    @media screen and (max-width: 768px){
+    .responsive-iframe-containers {
+     width: 100%;height:330px!important;
+    }
+}
+</style>
+    <script>
+        let iframeLoaded = false; // Track if iframe is loaded
+        const iframe = document.getElementById("dragonsweeper-iframe"); // Moved outside loadIframe to be accessible
+        const playButton = document.getElementById("playButton");
+        const gameImageContainer = document.querySelector(".responsive-iframe-containers");
+
+        function loadIframe() {
+            iframe.src = "https://turbowarp.org/199047441/embed";
+             playButton.style.display = "none"; //Hide button
+            iframeLoaded = true; // Set to true so it's not loaded again
+            iframe.focus(); // Give focus to iframe for keyboard controls if necessary
+
+            gameImageContainer.style.backgroundImage = "none";
+
+        }
+          playButton.addEventListener("click", loadIframe); // Listen for click
+    </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JN27Z9NMQ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JN27Z9NMQ7');
+</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="/">Dragon<span class="light">sweeper</span></a></h1>
+            </div>
+            <Nav />
+      <select style="float:right;">
+        <option data-lang="en" data-url="/">English</option>
+        <option data-lang="zh-CN" data-url="/zh/">简体中文</option>  
+        <option data-lang="es" data-url="/es/">Español</option>
+        <option data-lang="fr" data-url="/fr/">Français</option>
+        <option data-lang="de" data-url="/de/">Deutsch</option>
+        <option data-lang="ja" data-url="/ja/">日本語</option>
+        <option data-lang="ko" data-url="/ko/">한국어</option>
+        <option data-lang="ar" data-url="/ar/">العربية</option>
+        </select>
+        </div>
+    </header>
+    <main>
+
+        <section class="hero">
+            <div class="container">
+            <h2>Minesweeper</h2>
+        <div class="game-grid">
+          <!-- Game cards go here -->
+          <div class="game-card responsive-iframe-containers">
+             <iframe id="dragonsweeper-iframe" src="" allowfullscreen width="100%" height="100%" frameborder="0" ></iframe>
+               <button id="playButton">Play</button>
+             </div>
+            </div>
+        </div>
+            </div>
+        </section>
+
+    <TrendingGames/>
+
+
+<section class="about faq" >
+  <div class="container">
+    <h2>Minesweeper Rules</h2>
+    <div class="faq-item">
+<h3>Minesweeper Objective</h3>
+<p>The goal of Minesweeper is to locate and mark all the mines hidden under the grey squares as quickly as possible. Clicking on a square will reveal one of the following:</p>
+<ul>
+<li>A mine: Clicking it ends the game.</li>
+<li>A number: Indicates how many adjacent squares contain mines.</li>
+<li>Nothing: Shows no adjacent mines, and nearby empty squares will be revealed automatically.
+The first square you click is always safe, so you can start anywhere. Often, it opens up a blank area, making it easier to deduce where the mines are.</li>
+</ul></div>
+<div class="faq-item">
+<h3>Basic Actions</h3>
+<ul>
+<li>Open a square: Left-click to reveal its content.</li>
+<li>Mark a mine: Right-click to flag a square as a mine. A mine icon will appear on it.</li>
+<li>Mark with a question mark: If you're unsure, right-click twice or once on a flagged square to mark it with a question mark. This prevents accidental clicks.</li>
+<li>Clear marks: Right-click again to cycle through "Mine, Question Mark, Clear."</li>
+<li>Quick open adjacent squares: If a number square's adjacent mines are all flagged, left-clicking the number will open the remaining adjacent squares. Be cautious—wrong flags could trigger a mine!</li>
+</ul></div><div class="faq-item">
+<h3>Tips</h3><ul>
+<li>Use the numbers to deduce mine locations strategically.</li>
+<li>Mark uncertain squares with question marks to avoid mistakes.</li>
+<li>Master quick open to save time and speed up your game.</li></ul>
+</div>
+
+    </div>
+
+
+
+
+  </div>
+</section>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+        <div><a href="/privacy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a></div>
+            <div class="copyright">© 2025 dragonsweepers.net All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+    });
+    </script>
+    <script>
+      function goToLink(event) {
+        const select = event.target;
+        const selectedOption = select.options[select.selectedIndex];
+        const url = selectedOption.getAttribute('data-url');
+        if (url) {
+          window.location.href = url;
+        }
+      }
+  
+      // Add event listener
+      document.addEventListener('DOMContentLoaded', () => {
+        const select = document.querySelector('select');
+        if (select) {
+          select.addEventListener('change', goToLink);
+  
+          // Set current language based on the <html> tag's lang attribute
+          const htmlLang = document.documentElement.lang;
+          const options = Array.from(select.options);
+  
+          // Try to find an option that exactly matches the lang attribute
+          const currentOption = options.find(option =>
+            option.getAttribute('data-lang') === htmlLang
+          );
+  
+          if (currentOption) {
+            currentOption.selected = true;
+          } else {
+            // If no exact match is found, try to find a default option (data-lang="en" or "/")
+            let defaultOption = options.find(option =>
+              option.getAttribute('data-lang') === 'en' // common default
+            );
+  
+            if (!defaultOption) {
+              defaultOption = options.find(option =>
+                option.getAttribute('data-lang') === '/' // older convention
+              );
+            }
+  
+  
+            if (defaultOption) {
+              defaultOption.selected = true;
+            }
+          }
+        }
+      });
+      </script>
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style" data-a2a-scroll-show="0,60" style="bottom:0px; right:0px;">
+
+<a class="a2a_button_x"></a>
+<a class="a2a_button_reddit"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_telegram"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_linkedin"></a>
+    <a class="a2a_dd" href="https://www.dragonsweepers.net/"></a>
+</div>
+<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">
+<a class="a2a_button_x"></a>
+<a class="a2a_button_reddit"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_telegram"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_linkedin"></a>
+    <a class="a2a_dd" href="https://www.dragonsweepers.net/"></a>
+</div>
+
+<script defer src="https://static.addtoany.com/menu/page.js"></script>
+</body>
+</html>
