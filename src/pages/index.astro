@@ -20,23 +20,26 @@ import Nav from './nav.astro';
     <link rel="alternate" hreflang="es" href="https://www.dragonsweepers.net/es/" />
     <link rel="alternate" hreflang="ja" href="https://www.dragonsweepers.net/ja/" />
     <link rel="alternate" hreflang="ko" href="https://www.dragonsweepers.net/ko/" />
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Dragonsweeper - Free & Fresh Puzzle Dragonsweeper Game",
-      "alternateName": "dragonsweepers.net",
-      "url": "https://www.dragonsweepers.net/",
-      "description": "Dragonsweeper is a free online Minesweeper variant game with a fantasy twist! Play now to uncover hidden treasures while avoiding fearsome dragons.",
-      "aggregateRating": {
-          "@type": "AggregateRating",
-          "worstRating": 1,
-          "bestRating": 10,
-          "ratingValue": "7.7",
-          "ratingCount": "235"
-      },
-    }
-    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Game",
+  "name": "Dragonsweeper",
+  "url": "https://www.dragonsweepers.net/",
+  "description": "Dragonsweeper is a free online Minesweeper variant game with a fantasy twist! Play now to uncover hidden treasures while avoiding fearsome dragons.",
+  "image": "https://www.dragonsweepers.net/play-bg.png",
+  "genre": "Puzzle",
+  "applicationCategory": "Game",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.dragonsweepers.net/",
+    "price": "0.00",
+    "priceCurrency": "USD" ,
+    "availability": "http://schema.org/OnlineOnly"
+  }
+}
+</script>
     
     <meta property="og:title" content="Dragonsweeper - Free & Fresh Puzzle Dragonsweeper Game"/>
     <meta property="og:description" content="Dragonsweeper is a free online Minesweeper variant game with a fantasy twist! Play now to uncover hidden treasures while avoiding fearsome dragons."/>

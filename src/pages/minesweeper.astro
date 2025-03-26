@@ -12,24 +12,26 @@ import Nav from './nav.astro';
 
     <meta name="description" content="Play the classic puzzle game Minesweeper online for free. No download required. Can you uncover all the mines?">
     <meta name="robots" content="index, follow"/>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Play Minesweeper Online",
-      "alternateName": "dragonsweepers.net",
-      "url": "https://www.dragonsweepers.net/minesweeper/",
-      "description": "Play the classic puzzle game Minesweeper online for free. No download required. Can you uncover all the mines?",
-      "aggregateRating": {
-          "@type": "AggregateRating",
-          "worstRating": 1,
-          "bestRating": 10,
-          "ratingValue": "9.5",
-          "ratingCount": "635"
-      },
-    }
-    </script>
-    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Game",
+  "name": "Minesweeper",
+  "url": "https://www.dragonsweepers.net/minesweeper/",
+  "description": "Play the classic puzzle game Minesweeper online for free. No download required. Can you uncover all the mines?",
+  "image": "https://www.dragonsweepers.net/minesweeper.png",
+  "genre": "Puzzle",
+  "applicationCategory": "Game",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.dragonsweepers.net/minesweeper/",
+    "price": "0.00",
+    "priceCurrency": "USD" ,
+    "availability": "http://schema.org/OnlineOnly"
+  }
+}
+</script>    
     <meta property="og:title" content="Play Minesweeper Online - Minesweeper Free & Puzzle Game"/>
     <meta property="og:description" content="Play the classic puzzle game Minesweeper online for free. No download required. Can you uncover all the mines?"/>
     <meta property="og:url" content="https://dragonsweepers.net/minesweeper/"/>
