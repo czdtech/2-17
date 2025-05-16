@@ -3,8 +3,8 @@ import "../../styles/main.css";
 import Nav from '../nav.astro';
 export function getStaticPaths({ paginate }) {
   const astronautPages = [
-    { astronaut: ["/blog/2025-05/16-character-design-analysis-in-dragonsweeper","May 16,2025","Character Design Analysis in Dragonsweeper","Dragonsweeper merges traditional Minesweeper mechanics with RPG progression through its character and monster designs."]},
-    { astronaut: ["/blog/2025-05/16-minesweeper-meets-rpg-dragonsweeper","May 16,2025","When Minesweeper Meets RPG: The Innovation and Charm of Dragonsweeper","Then came Dragonsweeper—this browser-based game quietly released on itch.io by indie developer Daniel Benmergui reignited my puzzle-solving passion with its brilliant 'Minesweeper + RPG' fusion."]}
+    { astronaut: ["/blog/2025-05/16-character-design-analysis-in-dragonsweeper/","May 16,2025","Character Design Analysis in Dragonsweeper","Dragonsweeper merges traditional Minesweeper mechanics with RPG progression through its character and monster designs."]},
+    { astronaut: ["/blog/2025-05/16-minesweeper-meets-rpg-dragonsweeper/","May 16,2025","When Minesweeper Meets RPG: The Innovation and Charm of Dragonsweeper","Then came Dragonsweeper—this browser-based game reignited my puzzle-solving passion with its brilliant 'Minesweeper + RPG' fusion."]}
   ];
 
   return paginate(astronautPages, { pageSize: 30 });
@@ -112,7 +112,7 @@ const { page } = Astro.props;
 
     <footer>
         <div class="container">
-        <div><a href="/about">About Us</a><a href="/privacy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a><a href="/contact">Contact Us</a></div>
+        <div><a href="/about/">About Us</a><a href="/privacy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a><a href="/contact/">Contact Us</a></div>
             <div class="copyright">© 2025 dragonsweepers.net All rights reserved.</div>
         </div>
     </footer>
