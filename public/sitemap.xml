@@ -15,55 +15,85 @@
   <url>
     <loc>https://www.dragonsweepers.net/google-minesweeper/</loc>
     <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.dragonsweepers.net/minesweeper/</loc>
     <lastmod>2025-03-21</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.dragonsweepers.net/blog/</loc>
+    <lastmod>2025-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.dragonsweepers.net/blog/2025-05/16-character-design-analysis-in-dragonsweeper/</loc>
+    <lastmod>2025-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.dragonsweepers.net/blog/2025-05/16-minesweeper-meets-rpg-dragonsweeper/</loc>
+    <lastmod>2025-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.dragonsweepers.net/about/</loc>
+    <lastmod>2025-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+    <url>
+    <loc>https://www.dragonsweepers.net/contact/</loc>
+    <lastmod>2025-05-16</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.dragonsweepers.net/zh/</loc>
     <lastmod>2025-02-17</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.dragonsweepers.net/de/</loc>
     <lastmod>2025-02-17</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.dragonsweepers.net/fr/</loc>
     <lastmod>2025-02-17</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.dragonsweepers.net/es/</loc>
     <lastmod>2025-02-17</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.dragonsweepers.net/ko/</loc>
     <lastmod>2025-02-17</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.dragonsweepers.net/ja/</loc>
     <lastmod>2025-02-17</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.dragonsweepers.net/ar/</loc>
     <lastmod>2025-02-17</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
